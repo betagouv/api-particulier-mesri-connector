@@ -14,7 +14,7 @@ flask-restplus = "*"
 werkzeug = "==0.16.1"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true
