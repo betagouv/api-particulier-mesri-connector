@@ -1,11 +1,11 @@
 def test_api_call_not_found(client):
-    response = client.get("/v2/etudiant?ine=yolo")
+    response = client.get("/v2/etudiants?ine=yolo")
 
     assert response.status_code == 404
 
 
 def test_api_call(client):
-    response = client.get("/v2/etudiant?ine=0906018155T")
+    response = client.get("/v2/etudiants?ine=0906018155T")
 
     assert response.status_code == 200
     assert response.json == {
