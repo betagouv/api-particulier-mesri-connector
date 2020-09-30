@@ -5,7 +5,7 @@ class StudentSatusModel:
     api = Namespace(
         "Statut étudiant",
         description="Informations sur un étudiant et ses inscriptions académiques",
-        path="/v2/etudiant",
+        path="/v2/etudiants",
     )
     status = api.model(
         "Etudiant",
