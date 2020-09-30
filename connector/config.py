@@ -17,3 +17,7 @@ class DevConfig(Config):
 
 class ProductionConfig(Config):
     pass
+
+
+class TestConfig(Config):
+    Testing = True
