@@ -6,7 +6,7 @@ api = StudentSatusModel.api
 _status = StudentSatusModel.status
 
 
-@api.route("")
+@api.route("", strict_slashes=False)
 @api.response(404, "Étudiant introuvable")
 class StudentStatus(Resource):
     @api.doc("get_student")
